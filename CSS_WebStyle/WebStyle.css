@@ -1,0 +1,85 @@
+@import "FontSheet.css";
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,h2 {
+    font-family: Roboto-Regular,Arial;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    background-color: #000000;
+}
+
+.ContentBody  {
+    display: block;
+    background-color: rgba(194, 194, 194, 0);
+
+    max-width: 720px;
+    min-height: 1280px;
+    height: auto;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    overflow: hidden;
+}
+
+.ContentSection {
+    background-color: rgb(105, 105, 105);
+    width: 100%;
+    min-height: 200px;
+    border-radius: 10px;
+}
+
+.Header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+    background-color: #27a0c9;
+    border-bottom: solid #1e7d9b 10px;
+
+    min-height: 100px;
+
+
+    overflow: hidden;
+}
+
+.Header h1 {
+    display: block;
+    font-size: 25px;
+    color: white;
+
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+
+.Header h2 {
+    display: inline-block;
+    font-size: 15px;
+    color: #c2c2c2;
+
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.SubTitle {
+    display: block;
+    font-family: Coda,Arial;
+    border-radius: 10px;
+    background-color: rgb(105, 105, 105);
+
+    width: auto;
+    text-align: center;
+    margin: 10px auto;
+}
+
