@@ -106,11 +106,16 @@ body {
 .LinkBox {
     border-radius: 10px;
     margin: 20px 10px;
+    width: auto;
 
     min-height: 100px;
-    background-color: black;
+    background-color: #ffffff;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+.LinkBox div{
+    border-radius: 10px;
 }
 
