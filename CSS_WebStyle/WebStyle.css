@@ -8,6 +8,18 @@ h1,h2 {
     font-family: Roboto-Regular,Arial;
 }
 
+p {
+    font-size: 15px;
+    font-family: Roboto-Regular;
+    font-weight: bold;
+}
+
+li {
+    font-size: 15px;
+    font-family: Roboto-Regular;
+    font-weight: bold;
+}
+
 a {
     text-decoration: none;
 }
@@ -36,6 +48,14 @@ body {
     width: 100%;
     min-height: 200px;
     border-radius: 10px;
+
+    overflow: auto;
+}
+
+.ContentSection p{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .Header {
@@ -76,7 +96,7 @@ body {
     display: block;
     font-family: Coda,Arial;
     border-radius: 10px;
-    background-color: rgb(105, 105, 105);
+    background-color: rgb(255, 255, 255);
 
     width: auto;
     text-align: center;
