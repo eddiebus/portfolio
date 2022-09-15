@@ -4,14 +4,22 @@ html {
     scroll-behavior: smooth;
 }
 
-h1,h2 {
+h1,h2,h3 {
+    color: white;
     font-family: Roboto-Regular,Arial;
+    margin-bottom: 5px;
 }
 
+
+
 p {
+    color: white;
     font-size: 15px;
     font-family: Roboto-Regular;
     font-weight: bold;
+
+    margin-right: 30%;
+    line-height: 20px;
 }
 
 li {
@@ -37,8 +45,8 @@ body {
     min-height: 100vh;
     height: auto;
 
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    padding: 20px;
 
     overflow: hidden;
 }
@@ -63,8 +71,8 @@ body {
     position: sticky;
     top: 0;
 
-    background-color: #27a0c9;
-    border-bottom: solid #1e7d9b 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
 
     min-height: 100px;
 
@@ -73,7 +81,7 @@ body {
 }
 
 .Header h1 {
-    display: block;
+    display: inline;
     font-size: 25px;
     color: white;
 
@@ -83,6 +91,7 @@ body {
 }
 
 .Header h2 {
+    position: absolute;
     display: inline-block;
     font-size: 15px;
     color: #c2c2c2;
@@ -101,6 +110,18 @@ body {
     width: auto;
     text-align: center;
     margin: 10px auto;
+}
+
+.ProfilePic {
+    position: relative;
+    display: inline;
+    border-radius: 50%;
+    float: right;
+    height: 60px;
+    width: auto;
+
+    margin-right: 10%;
+    overflow: hidden;
 }
 
 .LinkBox {
