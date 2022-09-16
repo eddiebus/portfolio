@@ -51,6 +51,7 @@ body {
     overflow: hidden;
 }
 
+
 .ContentSection {
     background-color: rgb(105, 105, 105);
     width: 100%;
@@ -146,7 +147,7 @@ body {
 
 }
 
-.LinkBox_Content {
+.LinkBox_Name {
     width: 100%;
 
     border-top-right-radius: 10px;
