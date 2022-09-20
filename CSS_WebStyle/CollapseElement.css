@@ -1,0 +1,25 @@
+.Collapsible {
+    background-color: cyan;
+    color: #000000;
+    cursor: pointer;
+
+    font-size: 15px;
+    padding: 18px;
+
+    border: none;
+    text-align: left;
+    outline: none;
+}
+
+
+.active, .Collapsible{
+    background-color: darkcyan;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0 18px;
+    overflow: hidden;
+    border: 3px Grey Solid;
+}
+
