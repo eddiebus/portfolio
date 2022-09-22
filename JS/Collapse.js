@@ -1,9 +1,15 @@
 
-function CollToggle(element) {
-    element.classList.toggle("active");
-    let content = element.nextElementSibling;
+function CollToggle(event) {
+    console.log(event.target);
+    let content = event.target.nextElementSibling;
 
-    console.log("Collap Pressed");
+    if (content.style.display === "block"){
+        content.style.display = "none";
+    }
+    else {
+        content.style.display = "block";
+    }
+    console.log("Collapse Box Pressed");
 }
 
 
@@ -11,10 +17,7 @@ function CollToggle(element) {
 function init() {
     let Coll_Elements = document.getElementsByClassName("Collapsible")
 
-
-
     for (let i = 0; i < Coll_Elements.length; i++) {
-        console.log("!!!!");
-        Coll_Elements[i].addEventListener('click', CollToggle(this))
+        Coll_Elements[i].addEventListener('click', CollToggle)
     }
 }

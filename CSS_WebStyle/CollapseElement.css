@@ -1,4 +1,8 @@
 .Collapsible {
+    color: white;
+    font-family: Roboto-Regular, Arial;
+    font-weight: bolder;
+
     background-color: cyan;
     color: #000000;
     cursor: pointer;
@@ -10,6 +14,17 @@
     border: none;
     text-align: left;
     outline: none;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.Collapsible h1{
+    color: white;
+    font-family: Roboto-Regular, Arial;
+    margin-top: 0px;
+    font-size: 16px;
+    padding-top: 6px;
 }
 
 
@@ -17,10 +32,15 @@
     background-color: darkcyan;
 }
 
-.content {
+.CollapsibleContent {
+    display: none;
     background-color: rgba(255, 255, 255, 0);
     padding: 0 18px;
     overflow: hidden;
-    border: 3px Grey Solid;
+
+
+    border: 3px #ffffff Solid;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
