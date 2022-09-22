@@ -1,6 +1,5 @@
 
 function CollToggle(event) {
-    console.log(event.target);
     let content = event.target.nextElementSibling;
 
     if (content.style.display === "block"){
@@ -9,7 +8,6 @@ function CollToggle(event) {
     else {
         content.style.display = "block";
     }
-    console.log("Collapse Box Pressed");
 }
 
 
