@@ -1,8 +1,9 @@
 
 function CollToggle(event) {
     let content = event.target.nextElementSibling;
-
-    if (content.style.display === "block"){
+    let currentStyle = content.style.display;
+    console.log(currentStyle);
+    if (content.style.display == "block"){
         content.style.display = "none";
     }
     else {
@@ -12,7 +13,7 @@ function CollToggle(event) {
 
 
 
-function init() {
+function CollapseInit() {
     let Coll_Elements = document.getElementsByClassName("Collapsible")
 
     for (let i = 0; i < Coll_Elements.length; i++) {
