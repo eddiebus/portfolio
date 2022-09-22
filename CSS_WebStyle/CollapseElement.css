@@ -3,7 +3,7 @@
     font-family: Roboto-Regular, Arial;
     font-weight: bolder;
 
-    background-color: cyan;
+    background-color: #8d8d8d;
     color: #000000;
     cursor: pointer;
 
@@ -25,11 +25,13 @@
     margin-top: 0px;
     font-size: 16px;
     padding-top: 6px;
+
+    user-select: none;
 }
 
 
 .active, .Collapsible{
-    background-color: darkcyan;
+    background-color: #656565;
 }
 
 .CollapsibleContent {
