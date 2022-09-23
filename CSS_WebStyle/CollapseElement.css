@@ -14,8 +14,7 @@
     text-align: left;
     outline: none;
 
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 10px;
 
     width: 100%;
     margin-right: 0px;
@@ -36,9 +35,7 @@
     background-color: rgb(42, 42, 42);
     padding: 0 18px;
 
-
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
 
     width: auto;
     margin-right: 0px;
