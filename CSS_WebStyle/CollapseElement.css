@@ -1,13 +1,12 @@
 .Collapsible {
+    display: block;
     color: white;
     font-family: Roboto-Regular, Arial;
     font-weight: bolder;
 
     background-color: #8d8d8d;
-    color: #000000;
     cursor: pointer;
 
-    height: 70px;
     font-size: 15px;
     padding: 18px;
 
@@ -23,16 +22,7 @@
     margin-left: 0px;
 }
 
-.Collapsible h1{
-    color: white;
-    font-family: Roboto-Regular, Arial;
-    margin-top: 0px;
-    font-size: 16px;
-    padding-top: 6px;
 
-    user-select: none;
-    pointer-events: none;
-}
 
 
 .active, .Collapsible{
@@ -40,6 +30,7 @@
 }
 
 .CollapsibleContent {
+    display: block;
     background-color: rgba(255, 255, 255, 0);
     padding: 0 18px;
 
