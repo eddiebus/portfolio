@@ -3,11 +3,11 @@ function CollToggle(event) {
     let content = event.target.nextElementSibling;
     let currentStyle = content.style.display;
     console.log(currentStyle);
-    if (content.style.display == "block"){
-        content.style.display = "none";
+    if (content.style.maxHeight){
+        content.style.maxHeight = null;
     }
     else {
-        content.style.display = "block";
+        content.style.maxHeight = content.scrollHeight + "px";
     }
 }
 
