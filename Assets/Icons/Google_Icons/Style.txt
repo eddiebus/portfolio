@@ -1,0 +1,7 @@
+The Google Icons are gathered from: https://fonts.google.com/icons
+They use the following style:
+
+> Fill on
+> Weight: 400
+> Grade: 0
+> Optical Size: 48px
