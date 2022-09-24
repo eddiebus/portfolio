@@ -23,8 +23,16 @@
     height: 55px;
 }
 
+.Collapsible:hover{
+    background-color: #545454;
+}
+.Collapsible:active{
+    border: solid white 2px;
+}
+
+
 .Collapsible:after {
-    display: inline;
+    position: relative;
     content: "";
     width: 40px;
     height: 40px;
@@ -36,6 +44,7 @@
     background-size: contain;
     background-repeat: no-repeat;
 
+    z-index: 0;
 }
 
 
