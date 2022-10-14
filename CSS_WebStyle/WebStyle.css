@@ -52,6 +52,14 @@ p {
     height: auto;
 }
 
+a{
+    color: #0000ff;
+}
+
+a:visited {
+    color: #9d31ff;
+}
+
 li {
     color: white;
     font-size: 16px;
