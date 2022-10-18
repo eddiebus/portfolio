@@ -121,8 +121,11 @@ body {
     top: 0;
 
     z-index: 100;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgb(22, 35, 136);
     backdrop-filter: blur(5px);
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 
     min-height: 100px;
 
