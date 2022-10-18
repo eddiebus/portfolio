@@ -10,6 +10,12 @@ h1,h2,h3 {
     margin-bottom: 20px;
 }
 
+.ImageTitle {
+    color: grey;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
 img {
     user-select: none;
     -webkit-user-drag: none;
@@ -50,6 +56,7 @@ p {
     margin-right: auto;
 
     height: auto;
+    margin-bottom: 10px;
 }
 
 a{
@@ -67,20 +74,7 @@ li {
     font-weight: bold;
 }
 
-li a:after{
-    display: inline-block;
-    position: relative;
-    content: "";
-    width: 25px;
-    height: 25px;
 
-    transform: translateY(40%);
-    background-image: url("../Assets/Icons/Google_Icons/open_in_new_FILL1_wght400_GRAD0_opsz48.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-
-    z-index: 0;
-}
 
 a {
     text-decoration: none;
@@ -202,8 +196,8 @@ body {
     transition: outline 0.1s ease-out;
 
     margin-bottom: 10px;
-
 }
+
 
 .LinkButton:hover {
     outline-width: 4px;
