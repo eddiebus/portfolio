@@ -1,4 +1,5 @@
 @import url("FontSheet.css");
+@import url("Animation.css");
 
 html {
     scroll-behavior: smooth;
@@ -94,9 +95,11 @@ body {
     height: auto;
 
     margin: auto;
-    padding: 20px;
+    padding: 0px 20px;
 
     overflow: hidden;
+
+    animation: FadeIn 2s;
 }
 
 
@@ -128,11 +131,9 @@ body {
     border-bottom-right-radius: 20px;
 
     min-height: 100px;
-
-
     overflow: hidden;
 
-
+    animation: FadeIn 2s,FromTop 2s;
 }
 
 .Header h1 {
