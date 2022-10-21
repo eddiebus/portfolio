@@ -5,10 +5,18 @@ html {
     scroll-behavior: smooth;
 }
 
-h1,h2,h3 {
+h1,h2,h3,h4 {
     color: white;
     font-family: Roboto-Regular,Arial;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.GhostTitle{
+    font-family: Kosugi;
+    position: relative;
+    transform: translateY(-20px) translateX(1vw);
+    opacity: 0.5;
+    margin-bottom: 0;
 }
 
 .ImageTitle {

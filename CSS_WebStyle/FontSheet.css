@@ -12,3 +12,8 @@
     font-family: Coda;
     src: url("../Assets/Fonts/Coda/Coda-Regular.ttf");
 }
+
+@font-face {
+    font-family: Kosugi;
+    src: url("../Assets/Fonts/Kosugi/Kosugi-Regular.ttf");
+}
