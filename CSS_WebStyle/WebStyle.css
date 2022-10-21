@@ -14,9 +14,10 @@ h1,h2,h3,h4 {
 .GhostTitle{
     font-family: Kosugi;
     position: relative;
-    transform: translateY(-20px) translateX(1vw);
+    transform: translateY(-15px) translateX(5vw);
     opacity: 0.5;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .ImageTitle {
