@@ -202,6 +202,21 @@ body {
     margin-bottom: 10px;
 }
 
+.LinkButton:after {
+    position: relative;
+    content: "";
+    width: 25px;
+    height: 25px;
+    float: right;
+
+
+    transform: translateY(-25%);
+    background-image: url("../Assets/Icons/Google_Icons/open_in_new_FILL1_wght400_GRAD0_opsz48.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    z-index: 0;
+}
 
 .LinkButton:hover {
     outline-width: 4px;
