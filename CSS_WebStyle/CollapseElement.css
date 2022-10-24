@@ -21,14 +21,18 @@
     margin-left: 0px;
 
     height: 55px;
+
 }
 
 .Collapsible:hover{
     background-color: #545454;
 }
+
 .Collapsible:active{
-    border: solid white 2px;
+    outline: solid white 3px;
+    box-shadow: none;
 }
+
 
 
 .Collapsible:after {

@@ -14,10 +14,12 @@ h1,h2,h3,h4 {
 .GhostTitle{
     font-family: Kosugi;
     position: relative;
-    transform: translateY(-15px) translateX(5vw);
+    transform: translateY(-15px) translateX( min(5vw,10px) );
     opacity: 0.5;
     margin-bottom: 0;
     margin-top: 0;
+
+    user-select: none;
 }
 
 .ImageTitle {
@@ -133,7 +135,7 @@ body {
     top: 0;
 
     z-index: 100;
-    background-color: rgb(22, 35, 136);
+    background-color: rgba(22, 35, 136,1);
     backdrop-filter: blur(5px);
 
     border-bottom-left-radius: 20px;
