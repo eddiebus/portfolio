@@ -81,5 +81,23 @@
     transition: max-height 0.5s ease-out;
 }
 
+.CollapsibleContent p {
+    font-family: Roboto-Regular, Arial;
+    color: white;
+    font-size: 15px;
+    font-family: Roboto-Regular;
+    font-weight: bold;
+
+    margin-right: 10%;
+    margin-left: 10%;
+    line-height: 20px;
+}
+
+.CollapsibleContent li {
+    margin-left: 10%;
+}
+
+
+
 
 
