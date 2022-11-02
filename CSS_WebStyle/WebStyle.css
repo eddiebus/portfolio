@@ -6,7 +6,6 @@ html {
 }
 
 h1,h2,h3,h4 {
-    color: white;
     font-family: Roboto-Regular,Arial;
     margin-bottom: 10px;
 }
@@ -41,7 +40,6 @@ img {
 }
 
 .CenterTitle{
-    color:white;
     text-align: center;
     font-family: Roboto-Regular, Arial;
 
@@ -49,7 +47,6 @@ img {
 
 p {
     font-family: Roboto-Regular, Arial;
-    color: white;
     font-size: 15px;
     font-family: Roboto-Regular;
     font-weight: bold;
@@ -75,7 +72,6 @@ a:visited {
 }
 
 li {
-    color: white;
     font-size: 16px;
     font-family: Roboto-Regular;
     font-weight: bold;
@@ -87,7 +83,7 @@ a {
 
 body {
     margin: 0;
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 .ContentBody  {
@@ -128,7 +124,6 @@ body {
 
     z-index: 100;
     background-color: rgba(22, 35, 136,1);
-    backdrop-filter: blur(5px);
 
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -199,7 +194,8 @@ body {
     height: 50px;
     cursor: pointer;
 
-    outline: solid white 0;
+    border: 0;
+    outline: solid #000000 2px;
     transition: outline 0.1s ease-out;
 
     margin-bottom: 10px;
@@ -218,6 +214,7 @@ body {
     background-repeat: no-repeat;
 
     z-index: 0;
+
 }
 
 .LinkButton:hover {
@@ -232,4 +229,17 @@ body {
 
     float:right;
     transform: translateY(-15%);
+}
+
+.FullScreen{
+    background-color: rgba(255, 255, 255, 0);
+    width: 100vw;
+    height: 100vh;
+    border: 0;
+
+    position: -webkit-sticky;
+    position: fixed;
+    top: 0;
+
+    z-index: -100;
 }

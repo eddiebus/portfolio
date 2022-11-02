@@ -13,6 +13,7 @@
 <body>
 
 
+
 <div class="Header">
     <div style="margin-top: 20px; overflow: visible">
         <h1 style="user-select: none;">Edwin Busuulwa</h1>
@@ -23,6 +24,10 @@
     </div>
     <h2 style="user-select: none">UOD Games Student</h2>
 </div>
+
+<canvas class ="FullScreen" id="BG_Bubbles" style="filter:blur(3px);">
+
+</canvas>
 
 <div class="ContentBody">
     <h1 id="Intro" style="margin-top: 10px">Hello World! 👋</h1>
@@ -40,8 +45,6 @@
     <!--My works Section-->
     <section id="My Works">
         <h1>My Work 💻</h1>
-
-        Here are my projects that I have done during studies
         <button type="button" class="Collapsible">
             Graphics
         </button>
@@ -196,7 +199,7 @@
 
         <div style="text-align: center">
             <a href="https://www.britishdodgeball.org/" target="_blank"
-               style="display: inline-block;width: 49%">
+               style="display: inline-block;width: 49%;margin-right: 5px">
                 <button type="button" class="LinkButton CenterImage">
                     British Dodgeball
                 </button>
@@ -233,6 +236,8 @@
 </div>
 
 <script src="JS/Collapse.js" onload="CollapseInit()"></script>
+<script src="JS/BubbleBG.Js.js" onload="BubbleBG_Init('BG_Bubbles')"></script>
+
 
 </body>
 </html>

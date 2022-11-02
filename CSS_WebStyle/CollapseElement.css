@@ -22,10 +22,12 @@
 
     height: 55px;
 
+    transition: background-color ease-in 0.1s;
+
 }
 
 .Collapsible:hover {
-    background-color: #545454;
+    background-color: #3f3f3f;
 }
 
 .Collapsible:active {
@@ -46,6 +48,7 @@
     background-repeat: no-repeat;
 
     z-index: 0;
+
 }
 
 
