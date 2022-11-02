@@ -24,16 +24,14 @@
 
 }
 
-.Collapsible:hover{
+.Collapsible:hover {
     background-color: #545454;
 }
 
-.Collapsible:active{
+.Collapsible:active {
     outline: solid white 3px;
     box-shadow: none;
 }
-
-
 
 .Collapsible:after {
     position: relative;
@@ -41,7 +39,6 @@
     width: 40px;
     height: 40px;
     float: right;
-
 
     transform: translateY(-25%);
     background-image: url("../Assets/Icons/Google_Icons/expand_more_FILL1_wght400_GRAD0_opsz48.svg");
@@ -56,10 +53,7 @@
     background-image: url("../Assets/Icons/Google_Icons/expand_less_FILL1_wght400_GRAD0_opsz48.svg");
 }
 
-
-
-
-.active, .Collapsible{
+.active, .Collapsible {
     background-color: #656565;
 }
 
