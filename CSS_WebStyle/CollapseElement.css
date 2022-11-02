@@ -23,6 +23,8 @@
     height: 55px;
 
     transition: background-color ease-in 0.1s;
+    outline: solid #000000 2px;
+
 
 }
 
@@ -31,7 +33,7 @@
 }
 
 .Collapsible:active {
-    outline: solid white 3px;
+    outline: solid #000000 2px;
     box-shadow: none;
 }
 
@@ -62,9 +64,9 @@
 
 .CollapsibleContent {
     display: block;
-    background-color: rgb(42, 42, 42);
     padding: 0 18px;
 
+    background-color: rgba(141, 141, 141, 0.4);
     border-radius: 10px;
 
     width: auto;
@@ -78,17 +80,8 @@
     transition: max-height 0.5s ease-out;
 }
 
-.CollapsibleContent p {
-    font-family: Roboto-Regular, Arial;
-    color: white;
-    font-size: 15px;
-    font-family: Roboto-Regular;
-    font-weight: bold;
 
-    margin-right: 10%;
-    margin-left: 10%;
-    line-height: 20px;
-}
+
 
 .CollapsibleContent li {
     margin-left: 10%;
