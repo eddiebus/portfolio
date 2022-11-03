@@ -4,7 +4,7 @@
     font-family: Roboto-Regular, Arial;
     font-weight: bolder;
 
-    background-color: #8d8d8d;
+    background-color: #626893;
     cursor: pointer;
 
     font-size: 15px;
@@ -23,17 +23,18 @@
     height: 55px;
 
     transition: background-color ease-in 0.1s;
-    outline: solid #000000 2px;
+    outline: solid #bebebe 2px;
 
 
 }
 
 .Collapsible:hover {
-    background-color: #3f3f3f;
+    background-color: #343e8e;
+
 }
 
+
 .Collapsible:active {
-    outline: solid #000000 2px;
     box-shadow: none;
 }
 
@@ -53,13 +54,8 @@
 
 }
 
-
 .active:after {
     background-image: url("../Assets/Icons/Google_Icons/expand_less_FILL1_wght400_GRAD0_opsz48.svg");
-}
-
-.active, .Collapsible {
-    background-color: #656565;
 }
 
 .CollapsibleContent {

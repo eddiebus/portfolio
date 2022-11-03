@@ -8,12 +8,14 @@ html {
 h1,h2,h3,h4 {
     font-family: Roboto-Regular,Arial;
     margin-bottom: 10px;
+    margin-right: auto;
+    border-radius: 10px;
 }
 
 .GhostTitle{
     font-family: Kosugi;
     position: relative;
-    transform: translateY(-15px) translateX( min(5vw,10px) );
+    transform: translateY(-0.5em) translateX( min(5vw,10px) );
     opacity: 0.5;
     margin-bottom: 0;
     margin-top: 0;
@@ -27,8 +29,15 @@ h1,h2,h3,h4 {
 }
 
 img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
     user-select: none;
     -webkit-user-drag: none;
+}
+
+video {
+    border-radius: 10px;
 }
 
 .Page_Divider {
@@ -183,14 +192,13 @@ body {
 
 .LinkButton {
     width: auto;
-    padding: 0px 20px;
+    padding: 15px 10px;
     border-radius: 10px;
     box-sizing: border-box;
-    background-color: #656565;
+    background-color: #ffffff;
     text-align: center;
-    color: #ffffff;
+    color: #000000;
     font-size: 15px;
-    padding-top: 10px;
     font-family: Roboto-Regular, Arial;
     font-weight: bold;
 
@@ -198,10 +206,10 @@ body {
     cursor: pointer;
 
     border: 0;
-    outline: solid #000000 2px;
-    transition: outline 0.1s ease-out;
+    outline: solid #616793 2px;
+    transition: outline 0.1s ease-out, background-color 0.3s ease-in;
 
-    margin: 10px 10px;
+    margin: 5px 8px;
 }
 
 .LinkButton:after {
@@ -226,14 +234,6 @@ body {
     background-color: #545454;
 }
 
-.LinkButton_Icon {
-    border-radius: 2px;
-    height: 30px;
-    width: auto;
-
-    float:right;
-    transform: translateY(-15%);
-}
 
 .FullScreen{
     background-color: rgba(255, 255, 255, 0);
@@ -249,9 +249,12 @@ body {
 }
 
 .TextBubble {
-    padding: 5px 15px;
+    margin: 5px 0px;
+    padding: 0.1em 15px;
     border-radius: 10px;
     background-color: rgba(141, 141, 141, 0.4);
+
+    backdrop-filter: blur(10px);
 }
 
 .Horizontal_Flex_Container {
@@ -260,3 +263,4 @@ body {
     align-items: center;
     justify-content: center;
 }
+

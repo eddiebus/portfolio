@@ -27,8 +27,9 @@ class Bubble {
         this.x = window.innerWidth * Math.random();
         this.y = window.innerHeight + this.radius;
 
-        this.xDirAngle = Math.random() * 360;
-        this.turnSpeed = Math.random() * 20;
+        this.xDirRadian = Math.random() * 6;
+        this.turnSpeed = Math.random() * 0.002;
+        this.turnDir = Math.round(Math.random()) * 2 -1; //Generate random number between -1 and 1
         this.riseSpeed = Math.random() * (0.1) + 0.05;
 
         this.lifeTime = 0;
@@ -38,14 +39,18 @@ class Bubble {
     Tick(deltaTime){
         this.lifeTime += deltaTime/100;
         this.y -= this.riseSpeed * deltaTime;
+
+        this.xDirRadian += this.turnSpeed * this.turnDir * deltaTime;
+
+        this.x += Math.cos(this.xDirRadian) * this.riseSpeed * 10;
     }
 
     Render(Canvas2D){
         Canvas2D.beginPath();
         Canvas2D.arc(this.x,this.y,this.radius,0,360);
-        let maxOpacity = 0.2;
+        let maxOpacity = 0.5;
         let opacity = maxOpacity -  (maxOpacity * (this.lifeTime / this.maxLifeTime));
-        Canvas2D.fillStyle = `rgba(0,0,255,${opacity})`
+        Canvas2D.fillStyle = `rgba(46,72,226,${opacity})`
         Canvas2D.fill();
 
     }
@@ -54,7 +59,6 @@ class Bubble {
 function BubbleBG_Tick(timeNow){
     time.deltaTime = timeNow - time.pastTime;
     time.pastTime = timeNow;
-    console.log(`DeltaTime = ${time.deltaTime}|Bubbles = ${Bubbles.length}| SpawnTime = ${SpawnTime[0]}`)
 
 
     BubbleBGCanvas.clearRect(0,0,window.innerWidth,window.innerHeight);
@@ -72,6 +76,8 @@ function BubbleBG_Tick(timeNow){
 
         Bubbles[i].Tick(time.deltaTime);
         Bubbles[i].Render(BubbleBGCanvas);
+
+        console.log(`Bubble Turn Dir = ${Bubbles[i].turnDir}`)
 
         if (Bubbles[i].lifeTime > Bubbles[i].maxLifeTime * 2){
             let tempArray = Bubbles;
