@@ -8,7 +8,7 @@ let BubbleBGCanvas;
 let BubbleBGCanvasSize = [0,0];
 
 let Bubbles = [];
-let SpawnTime = [0,200];
+let SpawnTime = [0,100];
 
 function BubbleBG_Init(CanvasID) {
     BubbleBGElement = document.getElementById(CanvasID);
@@ -48,7 +48,7 @@ class Bubble {
     Render(Canvas2D){
         Canvas2D.beginPath();
         Canvas2D.arc(this.x,this.y,this.radius,0,360);
-        let maxOpacity = 0.5;
+        let maxOpacity = 0.8;
         let opacity = maxOpacity -  (maxOpacity * (this.lifeTime / this.maxLifeTime));
         Canvas2D.fillStyle = `rgba(46,72,226,${opacity})`
         Canvas2D.fill();

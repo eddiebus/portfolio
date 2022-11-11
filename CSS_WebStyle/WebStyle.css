@@ -9,7 +9,6 @@ h1,h2,h3,h4 {
     font-family: Roboto-Regular,Arial;
     margin-bottom: 10px;
     margin-right: auto;
-    border-radius: 10px;
 }
 
 .GhostTitle{
@@ -144,28 +143,41 @@ body {
     overflow: hidden;
 
     animation: FadeIn 2s,FromTop 2s;
+
+    display: flex;
+    flex-wrap:nowrap;
+    align-items: center;
 }
 
+
 .Header h1 {
-    display: inline;
+    display: block;
     font-size: 25px;
     color: white;
 
-    margin-top: 30px;
+    margin-top: 0px;
     margin-left: 15px;
     margin-bottom: 2px;
     user-select: none;
 }
 
+.Header h1,h2{
+    white-space: nowrap;
+}
+
 .Header h2 {
-    position: absolute;
-    display: inline-block;
+    display: block;
     font-size: 15px;
     color: #c2c2c2;
 
     margin-top: 0;
     margin-left: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+}
+
+.Header img {
+    margin-right: 10px;
+    flex-shrink: 0;
 }
 
 .SubTitle {
@@ -210,7 +222,7 @@ body {
     outline: solid #616793 2px;
     transition: outline 0.1s ease-out, background-color 0.3s ease-in;
 
-    margin: 5px 8px;
+    margin: 10px 8px;
 }
 
 .LinkButton:after {
