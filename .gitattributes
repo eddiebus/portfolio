@@ -2,3 +2,8 @@
 * text=auto
 
 git lfs track "*.mp4"
+git lfs track "*.png"
+git lfs track "*.jpeg"
+git lfs track "*.svg"
+git lfs track "*.ttf"
+
