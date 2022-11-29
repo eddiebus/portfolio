@@ -77,8 +77,6 @@ function BubbleBG_Tick(timeNow){
         Bubbles[i].Tick(time.deltaTime);
         Bubbles[i].Render(BubbleBGCanvas);
 
-        console.log(`Bubble Turn Dir = ${Bubbles[i].turnDir}`)
-
         if (Bubbles[i].lifeTime > Bubbles[i].maxLifeTime * 2){
             let tempArray = Bubbles;
             tempArray.splice(i,1);

@@ -7,8 +7,9 @@
     background-color: #626893;
     cursor: pointer;
 
-    font-size: 15px;
-    padding: 18px;
+    font-size: 18px;
+    text-shadow: black 0px 0.2em;
+    padding: 1.0em;
 
     border: none;
     text-align: left;
@@ -24,8 +25,6 @@
 
     transition: background-color ease-in 0.1s;
     outline: solid #bebebe 2px;
-
-
 }
 
 .Collapsible:hover {
