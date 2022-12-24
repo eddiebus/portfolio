@@ -7,6 +7,7 @@
     <link href="CSS_WebStyle/CollapseElement.css" rel="stylesheet">
     <link href="CSS_WebStyle/FontSheet.css" rel="stylesheet">
     <link href="CSS_WebStyle/WebStyle.css" rel="stylesheet">
+    <link href="CSS_WebStyle/ImageSlide.css" rel="stylesheet">
     <link rel="icon" href="Assets/Images/UOD_Logo.png">
     <meta charset="UTF-8">
     <title>eddiebus</title>
@@ -64,7 +65,7 @@
                 <li>Create a 3D render pipeline using DirectX.</li>
             </ul>
 
-            <p class ="ImageCaption"> 3D Windows GDI </p>
+            <p class="ImageCaption"> 3D Windows GDI </p>
             <video loop autoplay muted class="CenterImage" style="width: 50%">
                 <source src="Assets/Video/Graphics1_Preview.mp4" type="video/mp4">
                 Video not supported...
@@ -204,7 +205,15 @@
                 Many thanks to Team Derby for its strong and welcoming community.💙🧡
             </p>
 
-            <img class="CenterImage" src="Assets/Images/Dodgeball%202020-2021.jpeg">
+            <div class="Horizontal_Flex_Container">
+                <div class="ImageSlide_Container">
+                    <img style="animation: FadeIn 1s" src="Assets/Images/Dodgeball%202020-2021.jpeg">
+                    <img style="animation: FadeIn 1s" src="Assets/Images/DodgeActionPic%20(1).jpg">
+                    <img style="animation: FadeIn 1s" src="Assets/Images/DodgeActionPic%20(2).jpg">
+                    <img style="animation: FadeIn 1s" src="Assets/Images/DodgeActionPic%20(3).jpg">
+                    <img style="animation: FadeIn 1s" src="Assets/Images/DodgeActionPic%20(4).jpg">
+                </div>
+            </div>
 
         </div>
 
@@ -259,6 +268,7 @@
 
 <script src="JS/Collapse.js" onload="CollapseInit()"></script>
 <script src="JS/BubbleBG.Js.js" onload="BubbleBG_Init('BG_Bubbles')"></script>
+<script src="JS/ImageSlide.js" onload="BubbleBG_Init('BG_Bubbles')"></script>
 
 
 </body>

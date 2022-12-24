@@ -1,0 +1,12 @@
+.ImageSlide_Container {
+    max-width: 65%;
+    position: relative;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.ImageSlide {
+    display: none;
+    height: 45%;
+}
+
