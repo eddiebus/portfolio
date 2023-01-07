@@ -36,10 +36,20 @@
     <h1 id="Intro" style="margin-top: 10px">Hello World! 👋</h1>
 
     <div class="TextBubble">
-        <p>
+        <p lang="en">
             As a current 3rd Year Student at University of Derby I have been studying lots about Games and app making.
             Right now I am learning and using:
-        <ul>
+        <ul lang="en">
+            <li>OOP Programming (C++, C#, Python)</li>
+            <li>Unreal Engine</li>
+            <li>Unity</li>
+            <li>Web Development (HTML, JS, PHP)</li>
+        </ul>
+        </p>
+
+        <p lang="jp">
+            ダービ大学三年．ビデオゲームとアプリをコード作ることを勉強しています．今、使ってるのテックは:
+        <ul lang="jp">
             <li>OOP Programming (C++, C#, Python)</li>
             <li>Unreal Engine</li>
             <li>Unity</li>
@@ -198,11 +208,16 @@
     <!--Sport Section-->
     <section id="Sport">
         <h1>Sport 🤾‍♂️</h1>
-        <div class="TextBubble">
-            <p>
+        <div class="TextBubble LangSwap" lang="en">
+            <p lang="en">
                 Representing Team Derby in BUCS Dodgeball, a brand new BUCS Sport as of the 2020/2021 Season.
                 Dodgeball has been and still is intense, competitive and entertaining sport.
                 Many thanks to Team Derby for its strong and welcoming community.💙🧡
+            </p>
+
+            <p lang="jp">
+                ダービ大学のチーム代表、ドッジボール（マルチボール）となりました．マルチボールが早くて真剣なスポーツと思います．
+                ダービ大学のスポーツチームから本当に幸せ💙🧡．
             </p>
 
             <div class="Horizontal_Flex_Container">
@@ -242,22 +257,33 @@
     </section>
     <div class="Page_Divider"></div>
 
-
     <!--Language Section-->
     <section id="Language_Study">
         <h1 style="margin-bottom: 0">Language Study 💬🎌</h1>
         <h2 class="GhostTitle" style="font-family: Kosugi,Arial">日本語を勉強する</h2>
-        <div class="TextBubble LangSwap">
-            <p  lang="jp">
+
+        <div id="LNGStudyAbout" class="TextBubble LangSwap" lang="en" style="cursor:pointer">
+            <p lang="en">
                 Japanese study with the Nottingham Language Centre towards A2 (Elementary) level. The
                 Language centre provide focused learning that encourages active speaking in the target language whenever
                 possible.
             </p>
 
             <p lang="jp">
-
+                ノッティンガムLanguage Centreで日本語勉強しって．A2レベル目指しています．この授業で生徒、心配しないながら日本語で話すように
+                サポートをもらいます．沢山ことを話すことができたり新しい友達を会いました．
             </p>
+
+            <button class="Button" lang="en">
+                Switch Language 🔁
+            </button>
+
+            <button class="Button" lang="jp">
+                言語を変える 🔁
+            </button>
         </div>
+
+        <script src="JS/Webpage%20Specific/LngStudyButton.js"></script>
 
         <div class="Horizontal_Flex_Container">
             <a href="https://www.nottingham.ac.uk/language-centre/about-us/index.aspx" target="_blank">

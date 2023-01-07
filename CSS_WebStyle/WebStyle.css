@@ -67,6 +67,8 @@ p {
     font-weight: bold;
     margin-right: 15%;
     line-height: 20px;
+
+    animation: FadeIn 1s;
 }
 
 .CenterImage{
@@ -209,6 +211,28 @@ body {
 
 }
 
+.Button {
+    width: auto;
+    padding: 0.8em;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    text-align: center;
+    color: #000000;
+    font-size: 15px;
+    font-family: Roboto-Regular, Arial;
+    font-weight: bold;
+
+    height: auto;
+    cursor: pointer;
+
+    border: 0;
+    outline: solid #616793 2px;
+    transition: outline 0.1s ease-out, background-color 0.3s ease-in;
+
+    margin: 10px 8px;
+}
+
 .LinkButton {
     width: auto;
     padding: 15px 10px;
@@ -221,7 +245,7 @@ body {
     font-family: Roboto-Regular, Arial;
     font-weight: bold;
 
-    height: 50px;
+    height: auto;
     cursor: pointer;
 
     border: 0;
