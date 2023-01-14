@@ -1,4 +1,4 @@
-const Languages = ["en", "jp"];
+const Languages = [navigator.language, "jp"];
 let currentLang = 0;
 let targetElement = document.getElementById("LNGStudyAbout")
 

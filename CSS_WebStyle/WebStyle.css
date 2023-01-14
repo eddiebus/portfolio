@@ -235,7 +235,7 @@ body {
 
 .LinkButton {
     width: auto;
-    padding: 15px 10px;
+    padding: 0.5em 10px;
     border-radius: 10px;
     box-sizing: border-box;
     background-color: #ffffff;
@@ -251,8 +251,8 @@ body {
     border: 0;
     outline: solid #616793 2px;
     transition: outline 0.1s ease-out, background-color 0.3s ease-in;
-
     margin: 10px 8px;
+    
 }
 
 .LinkButton:after {
