@@ -6,7 +6,6 @@ html {
     scroll-padding-top: 110px; /* Offset scroll to account for header size*/
 }
 
-
 .spoiler {
     background-color: black;
     color: black;
@@ -197,6 +196,8 @@ body {
     margin-right: 10px;
     flex-shrink: 0;
 }
+
+
 
 .SubTitle {
     display: block;
