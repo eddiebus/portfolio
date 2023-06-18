@@ -166,6 +166,10 @@ body {
     align-items: center;
 }
 
+.Header a{
+    margin: 0px;
+}
+
 
 .Header h1 {
     display: block;
@@ -192,6 +196,10 @@ body {
     margin-bottom: 0px;
 }
 
+
+.HeaderLinkIcon{
+    margin: 0px 5px;
+}
 .Header img {
     margin-right: 10px;
     flex-shrink: 0;
