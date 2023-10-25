@@ -1,536 +1,671 @@
 <!DOCTYPE html>
 <html lang="en-GB" xmlns="http://www.w3.org/1999/html">
+
 <head>
     <!--Set Viewport-->
     <meta name="viewport" content="width=device-width, ,initial-scale=1.0">
-
     <link href="CSS_WebStyle/CollapseElement.css" rel="stylesheet">
     <link href="CSS_WebStyle/FontSheet.css" rel="stylesheet">
     <link href="CSS_WebStyle/WebStyle.css" rel="stylesheet">
     <link href="CSS_WebStyle/ImageSlide.css" rel="stylesheet">
     <link rel="icon" href="Assets/Images/UOD_Logo.png">
     <meta charset="UTF-8">
-    <title>eddiebus</title>
+    <title>Edwin B</title>
 </head>
+
 <body>
-
-<script src="JS/LoadingScreen.js"></script>
-<div class="Header">
-    <div style="width: max(90%,300px); padding-bottom: 10px">
-        <a href="#Intro">
-            <h1 style="margin-top: 8px;user-select: none;">Edwin Busuulwa</h1>
+    <div class="Header">
+        <div style="width: max(90%,300px); padding-bottom: 10px">
+            <a href="#Intro">
+                <h1 style="margin-top: 8px;user-select: none;">Edwin Busuulwa</h1>
+            </a>
+            <div class = "LangSwap">
+                <h2 lang="en-GB" style="user-select: none">University of Derby Graduate</h2>
+                <h2 lang="jp" style="user-select: none">Derby 大学の卒業生</h2>
+            </div>
+            <div class="Horizontal_Flex_Container"
+                style="margin-top: 10px;margin-left: 10px; justify-content: flex-start">
+                <a href="mailto: edwinbusulwa@gmail.com">
+                    <img class="HeaderLinkIcon" style="height: 25px; width: 25px; margin: 0px 10px"
+                        src="Assets/Icons/Google_Icons/mail_icon.png">
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/edwinbus/">
+                    <img style="height: 25px; width: 25px; margin-left: 15px; border-radius: 0"
+                        src="Assets/Icons/LinkedIn.png">
+                </a>
+            </div>
+        </div>
+        <img class="ProfilePic" src="Assets/Images/Profile_Pic.jpeg">
+        <a href="https://www.derby.ac.uk/" target="_blank">
+            <img style="border-radius: 0" class="ProfilePic" src="Assets/Images/UOD_Logo.png">
         </a>
-        <h2 style="user-select: none">University of Derby Graduate</h2>
-        <div class="Horizontal_Flex_Container" style="margin-top: 10px;margin-left: 10px; justify-content: flex-start">
-            <a href="mailto: edwinbusulwa@gmail.com">
-                <img class="HeaderLinkIcon" style="height: 25px; width: 25px; margin: 0px 10px"
-                     src="Assets/Icons/Google_Icons/mail_icon.png">
-            </a>
-            <a target="_blank" href="https://www.linkedin.com/in/edwinbus/">
-                <img style="height: 25px; width: 25px; margin-left: 15px; border-radius: 0"
-                     src="Assets/Icons/LinkedIn.png">
-            </a>
+    </div>
+
+    <canvas class="FullScreen" id="BG_Bubbles" style="filter:blur(3px);">
+    </canvas>
+
+    <div class="ContentBody" id =Intro>
+
+        <div class="LangSwap">
+            <h1 lang="en-GB"  style="margin-top: 10px">Hello World! 👋</h1>
+            <h1 lang="jp"  style="margin-top: 10px">皆さん、ハロー 👋</h1>
         </div>
-    </div>
-    <img class="ProfilePic" src="Assets/Images/Profile_Pic.jpeg">
-    <a href="https://www.derby.ac.uk/" target="_blank">
-        <img style="border-radius: 0" class="ProfilePic" src="Assets/Images/UOD_Logo.png">
-    </a>
-</div>
 
-<canvas class="FullScreen" id="BG_Bubbles" style="filter:blur(3px);">
-</canvas>
-
-<div class="ContentBody">
-    <h1 id="Intro" style="margin-top: 10px">Hello World! 👋</h1>
-
-    <div class="TextBubble">
-        <p lang="en-GB">
-            Welcome to my work portfolio. As a Derby University Graduate I have skills and experience for game, web and
-            software development using:
-        <ul lang="en-GB">
-            <li>OOP Programming (C++, C#, Python)</li>
-            <li>Unreal Engine</li>
-            <li>Unity</li>
-            <li>Web Development (HTML, Javascript, PHP)</li>
-        </ul>
-        </p>
-
-        <p lang="en-GB">
-            I'm openly looking for work opportunities right now. If you want to get in touch please contact me by email
-            at <a href ="mailto: edwinbusulwa@gmail.com" >edwinbusulwa@gmail.com</a>
-        </p>
-
-        <p lang="jp">
-            ダービ大学三年．ビデオゲームとアプリをコード作ることを勉強しています．今、使ってるのテックは:
-        <ul lang="jp">
-            <li>OOP Programming (C++, C#, Python)</li>
-            <li>Unreal Engine</li>
-            <li>Unity</li>
-            <li>Web Development (HTML, JS, PHP)</li>
-        </ul>
-        </p>
-    </div>
-    <div class="Page_Divider"></div>
-
-    <!--My works Section-->
-    <section id="Works">
-        <h1>My Work 💻</h1>
-        <button type="button" class="Collapsible">
-            Graphics
-        </button>
-        <div class="CollapsibleContent">
-            <p>
-                A two-module subject around the math and technology behind computer graphics. This module had two coding
-                projects that are:
-            </p>
-            <ul>
-                <li>Create a 3D software renderer with Windows GDI.</li>
-                <li>Create a 3D hardware render pipeline using DirectX 11.</li>
+        <div class="TextBubble">
+            <p lang="en-GB">
+                Welcome to my work portfolio. As a Derby University Graduate I have skills and experience for game, web
+                and
+                software development using:
+            <ul lang="en-GB">
+                <li>OOP Programming (C++, C#, Python)</li>
+                <li>Unreal Engine</li>
+                <li>Unity</li>
+                <li>Web Development (HTML, Javascript, PHP)</li>
             </ul>
-
-            <p>
-                These small demo applications were made using C++ and the Windows SDK.
             </p>
 
-            <video loop autoplay muted class="CenterImage" style="width: 50%">
-                <source src="Assets/Video/Graphics1_Preview.mp4" type="video/mp4">
-                Video not supported...
-            </video>
+            <p lang="jp">
+                ダービ大学三年．ビデオゲームとアプリをコード作ることを勉強しています．今、使ってるのテクノロジーは:
+            <ul lang="jp">
+                <li>OOP プログラミング (C++, C#, Python)</li>
+                <li>アンリアル　エンジン　(UE.5)</li>
+                <li>UNITY</li>
+                <li>Web (HTML, JS, PHP)</li>
+            </ul>
+            </p>
         </div>
+        <div class="Page_Divider"></div>
 
-        <button type="button" class="Collapsible">
-            Audio Visualisation
-        </button>
-        <div class="CollapsibleContent">
-            <p>
-                A prototype of audio visualisation of audio outputted from speakers in real time within the Unity
-                Engine. This demo uses open songs and images from the FanKit of discontinued mobile game KickFlight.
-                <span class="spoiler">
-                    Was really missing kickflight when I made this, easily my favourite mobile game back then.
-                    Wish it never closed. ಥ_ಥ
-                </span>
-            </p>
+        <!--My works Section-->
+        <section id="Works">
+            <h1>My Work 💻</h1>
 
-            <video loop autoplay muted class="CenterImage" style="width: 70%">
-                <source src="Assets/Video/Kicklight%20Audio%20Visual_Clip.mp4" type="video/mp4">
-                Video not supported...
-            </video>
+            <section id="Works/Project Metta Mech">
+                <button type="button" class="Collapsible">
+                    Project Metta Mech
+                </button>
+                <div class="CollapsibleContent">
+                    <div class="Horizontal_Flex_Container">
+                        <img src="Assets/Images/MettaMech/MettaMech_TitleCard.png">
+                    </div>
+                    <p>
+                        Final year video game project. Working in a team of 9 members to develop our own video game in
+                        Unreal
+                        Engine 5 and showcased in the Derby UIni Game Expo 2023. Metta Mech is a 2 player game of mech
+                        robots
+                        fending off against an invading alien horde. My contribution to the team were to code: UI,
+                        Gameplay and
+                        Graphic effects into the game using C++ and blueprints.
+                    </p>
+                    <div class="Horizontal_Flex_Container" style="padding: 10px">
+                        <video controls style="max-width: 90%"
+                            src="Assets/Video/University%20of%20Derby%20Final%20Project%20Game%20Trailer%20(Metta%20Mech).mp4">
+                        </video>
+                    </div>
+                    <div class="Horizontal_Flex_Container">
+                        <div class="ImageSlide_Container">
+                            <img style="animation: FadeIn 1s"
+                                src="Assets/Images/MettaMech/Gameplay/MettaMech_GameplayScreenshot%20(1).jpg">
+                            <img style="animation: FadeIn 1s"
+                                src="Assets/Images/MettaMech/Gameplay/MettaMech_GameplayScreenshot%20(5).jpg">
+                            <img style="animation: FadeIn 1s"
+                                src="Assets/Images/MettaMech/Gameplay/MettaMech_GameplayScreenshot%20(6).jpg">
+                            <img style="animation: FadeIn 1s"
+                                src="Assets/Images/MettaMech/Gameplay/MettaMech_GameplayScreenshot%20(7).jpg">
+                            <img style="animation: FadeIn 1s"
+                                src="Assets/Images/MettaMech/Gameplay/MettaMech_GameplayScreenshot%20(8).jpg">
+                        </div>
+                    </div>
 
-            <div class="Horizontal_Flex_Container">
-                <a href="https://kickflight.grenge.jp/fan_kit/" target="_blank">
-                    <button type="button" class="LinkButton CenterImage">
-                        KickFlight
-                    </button>
-                </a>
-
-                <a href="https://github.com/eddiebus/Unity-Visual_Audio" target="_blank">
-                    <button type="button" class="LinkButton CenterImage">
-                        Github Repository
-                    </button>
-                </a>
-            </div>
-        </div>
-        <button type="button" class="Collapsible">
-            PyGame Stuff
-        </button>
-        <div class="CollapsibleContent">
-            <p>
-                Mini-games and graphics "things" done in Python and Pygame. PyGame is a python module for basic 2D game
-                making. This was my personal introduction to OOP (though I was not that good at it back then... ).
-            </p>
-
-            <video loop autoplay muted class="CenterImage" style="width: 45%">
-                <source src="Assets/Video/PyGame_PeekBubble.mp4" type="video/mp4">
-                Video not supported...
-            </video>
-
-            <video loop autoplay muted class="CenterImage" style="width: 70%">
-                <source src="Assets/Video/PyGame_TypingGameTest.mp4" type="video/mp4">
-                Video not supported...
-            </video>
-
-            <div class="Horizontal_Flex_Container">
-                <a href="https://github.com/eddiebus/MyPython" target="_blank">
-                    <button type="button" class="LinkButton CenterImage">
-                        Github Repository
-                    </button>
-                </a>
-
-                <a href="https://www.pygame.org/news" target="_blank">
-                    <button type="button" class="LinkButton CenterImage">
-                        PyGame
-                    </button>
-                </a>
-            </div>
-        </div>
-
-        <button type="button" class="Collapsible">
-            Art Demo in Unity
-        </button>
-        <div class="CollapsibleContent">
-            <p>
-                A bunker scene demo created in a team of 6 (3 Programmers / 3 Artists) in a week for a challenge from
-                Antimatter Games in collaboration with Derby Univsersity. Our apocalyptic bunker themed scene was made
-                in Unity. I created the movement and object viewing functionality for this demo.
-            </p>
-
-            <video loop autoplay muted class="CenterImage" style="width: 55%">
-                <source src="Assets/Video/BunkerDemo_Clip.mp4" type="video/mp4">
-                Video not supported...
-            </video>
-        </div>
-
-        <button type="button" class="Collapsible">
-            My 1st Unreal Engine Game
-        </button>
-        <div class="CollapsibleContent">
-            <p>
-                My 1st game "Robot Punch" made in Unreal Engine 5 using blueprint scripting.
-                A short game about punching through endless robots. This game was made to focus on learning basic
-                AI programming skills in engine.
-            </p>
-            <video loop autoplay muted class="CenterImage" style="width: 75%">
-                <source src="Assets/Video/Robopunch_Clip.mp4" type="video/mp4">
-                Video not supported...
-            </video>
-        </div>
-
-        <button type="button" class="Collapsible">
-            Project Metta Mech
-        </button>
-        <div class="CollapsibleContent">
-            <div class="Horizontal_Flex_Container">
-                <img src="Assets/Images/MettaMech/MettaMech_TitleCard.png">
-            </div>
-            <p>
-                Final year video game project. Working in a team of 9 members to develop our own video game in Unreal
-                Engine 5 and showcased in the Derby UIni Game Expo 2023. Metta Mech is a 2 player game of mech robots
-                fending off against an invading alien horde. My contribution to the team were to code: UI, Gameplay and
-                Graphic effects into the game using C++ and blueprints.
-            </p>
-            <div class="Horizontal_Flex_Container" style="padding: 10px">
-                <video controls
-                       style="max-width: 90%"
-                       src="Assets/Video/University%20of%20Derby%20Final%20Project%20Game%20Trailer%20(Metta%20Mech).mp4">
-                </video>
-            </div>
-            <div class="Horizontal_Flex_Container">
-                <div class="ImageSlide_Container">
-                    <img style="animation: FadeIn 1s"
-                         src="Assets/Images/MettaMech/Gameplay/MettaMech_GameplayScreenshot%20(1).jpg">
-                    <img style="animation: FadeIn 1s"
-                         src="Assets/Images/MettaMech/Gameplay/MettaMech_GameplayScreenshot%20(5).jpg">
-                    <img style="animation: FadeIn 1s"
-                         src="Assets/Images/MettaMech/Gameplay/MettaMech_GameplayScreenshot%20(6).jpg">
-                    <img style="animation: FadeIn 1s"
-                         src="Assets/Images/MettaMech/Gameplay/MettaMech_GameplayScreenshot%20(7).jpg">
-                    <img style="animation: FadeIn 1s"
-                         src="Assets/Images/MettaMech/Gameplay/MettaMech_GameplayScreenshot%20(8).jpg">
-                </div>
-            </div>
-
-            <div class="Horizontal_Flex_Container">
-                <blockquote class="instagram-media" data-instgrm-captioned
+                    <div class="Horizontal_Flex_Container">
+                        <blockquote class="instagram-media" data-instgrm-captioned
                             data-instgrm-permalink="https://www.instagram.com/reel/CtG_AUbIHvc/?utm_source=ig_embed&amp;utm_campaign=loading"
                             data-instgrm-version="14"
                             style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
-                    <div style="padding:16px;"><a
-                            href="https://www.instagram.com/reel/CtG_AUbIHvc/?utm_source=ig_embed&amp;utm_campaign=loading"
-                            style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
-                            target="_blank">
-                        <div style=" display: flex; flex-direction: row; align-items: center;">
-                            <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
-                            <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
-                                <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
-                                <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
+                            <div style="padding:16px;"><a
+                                    href="https://www.instagram.com/reel/CtG_AUbIHvc/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                                    target="_blank">
+                                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                                        <div
+                                            style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                                        </div>
+                                        <div
+                                            style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="padding: 19% 0;"></div>
+                                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
+                                        <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                                            xmlns="https://www.w3.org/2000/svg"
+                                            xmlns:xlink="https://www.w3.org/1999/xlink">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                                    <g>
+                                                        <path
+                                                            d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div style="padding-top: 8px;">
+                                        <div
+                                            style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                            View this post on Instagram
+                                        </div>
+                                    </div>
+                                    <div style="padding: 12.5% 0;"></div>
+                                    <div
+                                        style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                        <div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                                            </div>
+                                            <div
+                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: 8px;">
+                                            <div
+                                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                                            </div>
+                                        </div>
+                                        <div style="margin-left: auto;">
+                                            <div
+                                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                                            </div>
+                                            <div
+                                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                                            </div>
+                                            <div
+                                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                                        </div>
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                                        </div>
+                                    </div>
+                                </a>
+                                <p
+                                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                                    <a href="https://www.instagram.com/reel/CtG_AUbIHvc/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                                        target="_blank">A post shared by University of Derby (@derbyuni)</a>
+                                </p>
                             </div>
-                        </div>
-                        <div style="padding: 19% 0;"></div>
-                        <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
-                            <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
-                                 xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <g transform="translate(-511.000000, -20.000000)" fill="#000000">
-                                        <g>
-                                            <path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path>
+                        </blockquote>
+                        <script async src="//www.instagram.com/embed.js"></script>
+                    </div>
+                </div>
+            </section>
+
+            <section id="Works/RoboPunch">
+                <button type="button" class="Collapsible">
+                    Robo Punch Game
+                </button>
+                <div class="CollapsibleContent">
+                    <div class="LangSwap">
+                        <p lang="en-GB">
+                            My 1st game "Robot Punch" made in Unreal Engine 5 using blueprint scripting.
+                            A short game about punching through endless robots. This game was made to focus on learning
+                            AI programming skills in engine using the behaviour tree system.
+                        </p>
+                        <p lang="jp">
+                            最初のゲームプロジェクト「ロボットパンチ」．UE5のBlueprintでこのゲームを作りました．
+                            ゲームはエンドレスバトルてAIロボットにサバイバルゲーム．コードはUE5のBehaviour Treeを使ってます．
+                        </p>
+                    </div>
+                    <video loop autoplay muted class="CenterImage" style="width: 75%">
+                        <source src="Assets/Video/Robopunch_Clip.mp4" type="video/mp4">
+                        Video not supported...
+                    </video>
+                </div>
+            </section>
+
+            <section id="Works/VisualAudio">
+                <button type="button" class="Collapsible">
+                    Audio Visualisation
+                </button>
+                <div class="CollapsibleContent">
+                    <p>
+                        A prototype of audio visualisation of audio outputted from speakers in real time within the
+                        Unity
+                        Engine. This demo uses open songs and images from the FanKit of discontinued mobile game
+                        KickFlight.
+                    </p>
+
+                    <video loop autoplay muted class="CenterImage" style="width: 70%">
+                        <source src="Assets/Video/Kicklight%20Audio%20Visual_Clip.mp4" type="video/mp4">
+                        Video not supported...
+                    </video>
+
+                    <div class="Horizontal_Flex_Container">
+                        <a href="https://kickflight.grenge.jp/fan_kit/" target="_blank">
+                            <button type="button" class="LinkButton CenterImage">
+                                KickFlight
+                            </button>
+                        </a>
+
+                        <a href="https://github.com/eddiebus/Unity-Visual_Audio" target="_blank">
+                            <button type="button" class="LinkButton CenterImage">
+                                Github Repository
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="Works/Graphics">
+                <button type="button" class="Collapsible">
+                    Graphics
+                </button>
+                <div class="CollapsibleContent">
+                    <p>
+                        A two-module subject around the math and technology behind computer graphics. This module had
+                        two coding
+                        projects that are:
+                    </p>
+                    <ul>
+                        <li>Create a 3D software renderer with Windows GDI.</li>
+                        <li>Create a 3D hardware render pipeline using DirectX 11.</li>
+                    </ul>
+
+                    <video loop autoplay muted class="CenterImage" style="width: 50%">
+                        <source src="Assets/Video/Graphics1_Preview.mp4" type="video/mp4">
+                        Video not supported...
+                    </video>
+                </div>
+            </section>
+
+            <section id="Works/PyGame">
+                <button type="button" class="Collapsible">
+                    PyGame
+                </button>
+                <div class="CollapsibleContent">
+                    <p>
+                        Mini-games and graphics tests done in Python and Pygame. PyGame is a python module for basic 2D
+                        game
+                        making.
+                    </p>
+
+                    <video loop autoplay muted class="CenterImage" style="width: 45%">
+                        <source src="Assets/Video/PyGame_PeekBubble.mp4" type="video/mp4">
+                        Video not supported...
+                    </video>
+
+                    <video loop autoplay muted class="CenterImage" style="width: 70%">
+                        <source src="Assets/Video/PyGame_TypingGameTest.mp4" type="video/mp4">
+                        Video not supported...
+                    </video>
+
+                    <div class="Horizontal_Flex_Container">
+                        <a href="https://github.com/eddiebus/MyPython" target="_blank">
+                            <button type="button" class="LinkButton CenterImage">
+                                Github Repository
+                            </button>
+                        </a>
+
+                        <a href="https://www.pygame.org/news" target="_blank">
+                            <button type="button" class="LinkButton CenterImage">
+                                PyGame
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="Unity Art Demo">
+                <button type="button" class="Collapsible">
+                    Art Demo in Unity
+                </button>
+                <div class="CollapsibleContent">
+                    <p>
+                        A bunker scene demo created in a team of 6 (3 Programmers / 3 Artists) in a week for a challenge
+                        from
+                        Antimatter Games in collaboration with Derby Univsersity. Our apocalyptic bunker themed scene
+                        was made
+                        in Unity. I created the movement and object viewing functionality for this demo.
+                    </p>
+
+                    <video loop autoplay muted class="CenterImage" style="width: 55%">
+                        <source src="Assets/Video/BunkerDemo_Clip.mp4" type="video/mp4">
+                        Video not supported...
+                    </video>
+                </div>
+            </section>
+
+        </section>
+        <div class="Page_Divider"></div>
+
+        <!--Sport Section-->
+        <section id="#Sport">
+            <h1>Sport 🤾‍♂️</h1>
+            <div class="TextBubble LangSwap" lang="en-GB">
+                <p lang="en-GB">
+                    Represented
+                    <spans style="color:blue">Team</spans>
+                    <span style="color: orange">Derby</span> in BUCS Dodgeball as Derby Seahawks. Working closely with
+                    the
+                    Derby
+                    Phantoms Adult Dodgeball team, achieving BUCS Championship in 22-23 Season and 2021/22 Men's Trophy
+                    winners.
+                </p>
+                <p lang="jp">
+                    ダービ大学のチーム代表、ドッジボール（マルチボール）となりました．マルチボールが早くて真剣なスポーツと思います．
+                    ダービ大学のスポーツチームから本当に幸せ💙🧡．
+                </p>
+
+                <div class="Horizontal_Flex_Container">
+                    <div class="ImageSlide_Container">
+                        <img style="animation: FadeIn 1s" src="Assets/Images/Dodgeball%202020-2021.jpeg">
+                        <img style="animation: FadeIn 1s" src="Assets/Images/DodgeActionPic%20(1).jpg">
+                        <img style="animation: FadeIn 1s" src="Assets/Images/DodgeActionPic%20(2).jpg">
+                        <img style="animation: FadeIn 1s" src="Assets/Images/DodgeActionPic%20(3).jpg">
+                        <img style="animation: FadeIn 1s" src="Assets/Images/DodgeActionPic%20(4).jpg">
+                        <img style="animation: FadeIn 1s" src="Assets/Images/BUCS%20Final%2023.jpg">
+                        <img style="animation: FadeIn 1s" src="Assets/Images/Uni%20Champs%2023.jpg">
+                    </div>
+
+
+                    <blockquote class="instagram-media"
+                        data-instgrm-permalink="https://www.instagram.com/p/CbF5zXuMy__/?utm_source=ig_embed&amp;utm_campaign=loading"
+                        data-instgrm-version="14"
+                        style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                        <div style="padding:16px;"><a
+                                href="https://www.instagram.com/p/CbF5zXuMy__/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                                target="_blank">
+                                <div style=" display: flex; flex-direction: row; align-items: center;">
+                                    <div
+                                        style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                                    </div>
+                                    <div
+                                        style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                                        </div>
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="padding: 19% 0;"></div>
+                                <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
+                                    <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                                        xmlns="https://www.w3.org/2000/svg">
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                                <g>
+                                                    <path
+                                                        d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                                    </path>
+                                                </g>
+                                            </g>
                                         </g>
-                                    </g>
-                                </g>
-                            </svg>
+                                    </svg>
+                                </div>
+                                <div style="padding-top: 8px;">
+                                    <div
+                                        style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                        View this post on Instagram
+                                    </div>
+                                </div>
+                                <div style="padding: 12.5% 0;"></div>
+                                <div
+                                    style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                    <div>
+                                        <div
+                                            style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                                        </div>
+                                        <div
+                                            style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                                        </div>
+                                        <div
+                                            style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                                        </div>
+                                    </div>
+                                    <div style="margin-left: 8px;">
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                                        </div>
+                                        <div
+                                            style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                                        </div>
+                                    </div>
+                                    <div style="margin-left: auto;">
+                                        <div
+                                            style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                                        </div>
+                                        <div
+                                            style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                                        </div>
+                                        <div
+                                            style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                    <div
+                                        style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                                    </div>
+                                    <div
+                                        style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                                    </div>
+                                </div>
+                            </a>
+                            <p
+                                style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                                <a href="https://www.instagram.com/p/CbF5zXuMy__/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                                    target="_blank">A post shared by Derby Seahawks (@uoddodgeball)</a>
+                            </p>
                         </div>
-                        <div style="padding-top: 8px;">
-                            <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
-                                View this post on Instagram
-                            </div>
+                    </blockquote>
+                    <script async src="//www.instagram.com/embed.js"></script>
+
+                    <blockquote class="instagram-media"
+                        data-instgrm-permalink="https://www.instagram.com/reel/CoKXlzRuIeR/?utm_source=ig_embed&amp;utm_campaign=loading"
+                        data-instgrm-version="14"
+                        style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                        <div style="padding:16px;"><a
+                                href="https://www.instagram.com/reel/CoKXlzRuIeR/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                                target="_blank">
+                                <div style=" display: flex; flex-direction: row; align-items: center;">
+                                    <div
+                                        style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
+                                    </div>
+                                    <div
+                                        style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
+                                        </div>
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="padding: 19% 0;"></div>
+                                <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
+                                    <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                                        xmlns="https://www.w3.org/2000/svg">
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                                <g>
+                                                    <path
+                                                        d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div style="padding-top: 8px;">
+                                    <div
+                                        style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
+                                        View this post on Instagram
+                                    </div>
+                                </div>
+                                <div style="padding: 12.5% 0;"></div>
+                                <div
+                                    style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                    <div>
+                                        <div
+                                            style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
+                                        </div>
+                                        <div
+                                            style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
+                                        </div>
+                                        <div
+                                            style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
+                                        </div>
+                                    </div>
+                                    <div style="margin-left: 8px;">
+                                        <div
+                                            style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
+                                        </div>
+                                        <div
+                                            style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
+                                        </div>
+                                    </div>
+                                    <div style="margin-left: auto;">
+                                        <div
+                                            style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
+                                        </div>
+                                        <div
+                                            style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
+                                        </div>
+                                        <div
+                                            style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                    <div
+                                        style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
+                                    </div>
+                                    <div
+                                        style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
+                                    </div>
+                                </div>
+                            </a>
+                            <p
+                                style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                                <a href="https://www.instagram.com/reel/CoKXlzRuIeR/?utm_source=ig_embed&amp;utm_campaign=loading"
+                                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
+                                    target="_blank">A post shared by Team Derby (@teamderby)</a>
+                            </p>
                         </div>
-                        <div style="padding: 12.5% 0;"></div>
-                        <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
-                            <div>
-                                <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div>
-                                <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div>
-                                <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div>
-                            </div>
-                            <div style="margin-left: 8px;">
-                                <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div>
-                                <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div>
-                            </div>
-                            <div style="margin-left: auto;">
-                                <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div>
-                                <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div>
-                                <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div>
-                            </div>
-                        </div>
-                        <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
-                            <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div>
-                            <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div>
-                        </div>
-                    </a>
-                        <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
-                            <a href="https://www.instagram.com/reel/CtG_AUbIHvc/?utm_source=ig_embed&amp;utm_campaign=loading"
-                               style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
-                               target="_blank">A post shared by University of Derby (@derbyuni)</a></p></div>
-                </blockquote>
-                <script async src="//www.instagram.com/embed.js"></script>
+                    </blockquote>
+                    <script async src="//www.instagram.com/embed.js"></script>
+                </div>
             </div>
-        </div>
 
-    </section>
-    <div class="Page_Divider"></div>
 
-    <!--Sport Section-->
-    <section id="#Sport">
-        <h1>Sport 🤾‍♂️</h1>
-        <div class="TextBubble LangSwap" lang="en-GB">
-            <p lang="en-GB">
-                Represented
-                <spans style="color:blue">Team</spans>
-                <span style="color: orange">Derby</span> in BUCS Dodgeball as Derby Seahawks. Working closely with the
-                Derby
-                Phantoms Adult Dodgeball team, achieving BUCS Championship in 22-23 Season and 2021/22 Men's Trophy
-                winners.
-            </p>
-            <p lang="jp">
-                ダービ大学のチーム代表、ドッジボール（マルチボール）となりました．マルチボールが早くて真剣なスポーツと思います．
-                ダービ大学のスポーツチームから本当に幸せ💙🧡．
-            </p>
+            <div class="Horizontal_Flex_Container ">
+                <a href="http://www.derby.ac.uk/life/sport/" target="_blank">
+                    <button type="button" class="LinkButton  ">
+                        Team Derby
+                    </button>
+                </a>
 
-            <div class="Horizontal_Flex_Container">
-                <div class="ImageSlide_Container">
-                    <img style="animation: FadeIn 1s" src="Assets/Images/Dodgeball%202020-2021.jpeg">
-                    <img style="animation: FadeIn 1s" src="Assets/Images/DodgeActionPic%20(1).jpg">
-                    <img style="animation: FadeIn 1s" src="Assets/Images/DodgeActionPic%20(2).jpg">
-                    <img style="animation: FadeIn 1s" src="Assets/Images/DodgeActionPic%20(3).jpg">
-                    <img style="animation: FadeIn 1s" src="Assets/Images/DodgeActionPic%20(4).jpg">
-                    <img style="animation: FadeIn 1s" src="Assets/Images/BUCS%20Final%2023.jpg">
-                    <img style="animation: FadeIn 1s" src="Assets/Images/Uni%20Champs%2023.jpg">
+                <a href="https://www.britishdodgeball.org/" target="_blank" style="display: inline-block;">
+                    <button type="button" class="LinkButton">
+                        British Dodgeball
+                    </button>
+                </a>
+
+                <a href="https://www.bucs.org.uk/sports-page/dodgeball.html" target="_blank"
+                    style="display: inline-block;">
+                    <button type="button" class="LinkButton">
+                        BUCS Dodgeball
+                    </button>
+                </a>
+            </div>
+        </section>
+        <div class="Page_Divider"></div>
+
+        <!--Language Section-->
+        <section id="Language_Study">
+            <div class="LangSwap">
+                <h1 style="margin-bottom: 0; animation: FadeIn 1s" lang="en-GB">Language Study 💬🎌</h1>
+                <h1 style="margin-bottom: 0; animation: FadeIn 1s" lang="jp">日本語を勉強する 💬🎌</h1>
+            </div>
+
+            <div id="LNGStudyAbout" class="TextBubble LangSwap" lang="en-GB" style="cursor:pointer">
+                <p lang="en-GB">
+                    Japanese study with the Nottingham Language Centre towards A2 (Elementary) level. The
+                    Language centre provide focused learning that encourages active speaking in the target language
+                    whenever
+                    possible.
+                </p>
+
+                <p lang="jp">
+                    ノッティンガムLanguage Centreで日本語勉強しって．A2レベル目指しています．この授業で生徒、心配しないながら日本語で話すように
+                    サポートをもらいます．沢山ことを話すことができたり新しい友達を会いました．
+                </p>
+
+                <div class="Horizontal_Flex_Container" lang="en-GB">
+                    <a href ="#Intro">
+                    <button class="Button" lang="en-GB">
+                        Switch Language 🔁
+                    </button>
+                    </a>
                 </div>
 
 
-                <blockquote class="instagram-media"
-                            data-instgrm-permalink="https://www.instagram.com/p/CbF5zXuMy__/?utm_source=ig_embed&amp;utm_campaign=loading"
-                            data-instgrm-version="14"
-                            style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
-                    <div style="padding:16px;"><a
-                            href="https://www.instagram.com/p/CbF5zXuMy__/?utm_source=ig_embed&amp;utm_campaign=loading"
-                            style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
-                            target="_blank">
-                        <div style=" display: flex; flex-direction: row; align-items: center;">
-                            <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
-                            <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
-                                <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
-                                <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
-                            </div>
-                        </div>
-                        <div style="padding: 19% 0;"></div>
-                        <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
-                            <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
-                                 xmlns="https://www.w3.org/2000/svg">
-                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <g transform="translate(-511.000000, -20.000000)" fill="#000000">
-                                        <g>
-                                            <path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path>
-                                        </g>
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
-                        <div style="padding-top: 8px;">
-                            <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
-                                View this post on Instagram
-                            </div>
-                        </div>
-                        <div style="padding: 12.5% 0;"></div>
-                        <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
-                            <div>
-                                <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div>
-                                <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div>
-                                <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div>
-                            </div>
-                            <div style="margin-left: 8px;">
-                                <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div>
-                                <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div>
-                            </div>
-                            <div style="margin-left: auto;">
-                                <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div>
-                                <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div>
-                                <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div>
-                            </div>
-                        </div>
-                        <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
-                            <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div>
-                            <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div>
-                        </div>
+                <div class="Horizontal_Flex_Container" lang="jp">
+                    <a href ="#Intro">
+                        <button class="Button" lang="jp">
+                            言語を変える 🔁
+                        </button>
                     </a>
-                        <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
-                            <a href="https://www.instagram.com/p/CbF5zXuMy__/?utm_source=ig_embed&amp;utm_campaign=loading"
-                               style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
-                               target="_blank">A post shared by Derby Seahawks (@uoddodgeball)</a></p></div>
-                </blockquote>
-                <script async src="//www.instagram.com/embed.js"></script>
+                </div>
 
-                <blockquote class="instagram-media"
-                            data-instgrm-permalink="https://www.instagram.com/reel/CoKXlzRuIeR/?utm_source=ig_embed&amp;utm_campaign=loading"
-                            data-instgrm-version="14"
-                            style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
-                    <div style="padding:16px;"><a
-                            href="https://www.instagram.com/reel/CoKXlzRuIeR/?utm_source=ig_embed&amp;utm_campaign=loading"
-                            style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
-                            target="_blank">
-                        <div style=" display: flex; flex-direction: row; align-items: center;">
-                            <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
-                            <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
-                                <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
-                                <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
-                            </div>
-                        </div>
-                        <div style="padding: 19% 0;"></div>
-                        <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
-                            <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
-                                 xmlns="https://www.w3.org/2000/svg">
-                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <g transform="translate(-511.000000, -20.000000)" fill="#000000">
-                                        <g>
-                                            <path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path>
-                                        </g>
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
-                        <div style="padding-top: 8px;">
-                            <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
-                                View this post on Instagram
-                            </div>
-                        </div>
-                        <div style="padding: 12.5% 0;"></div>
-                        <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
-                            <div>
-                                <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div>
-                                <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div>
-                                <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div>
-                            </div>
-                            <div style="margin-left: 8px;">
-                                <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div>
-                                <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div>
-                            </div>
-                            <div style="margin-left: auto;">
-                                <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div>
-                                <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div>
-                                <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div>
-                            </div>
-                        </div>
-                        <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
-                            <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div>
-                            <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div>
-                        </div>
-                    </a>
-                        <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
-                            <a href="https://www.instagram.com/reel/CoKXlzRuIeR/?utm_source=ig_embed&amp;utm_campaign=loading"
-                               style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
-                               target="_blank">A post shared by Team Derby (@teamderby)</a></p></div>
-                </blockquote>
-                <script async src="//www.instagram.com/embed.js"></script>
-            </div>
-        </div>
-
-
-        <div class="Horizontal_Flex_Container ">
-            <a href="http://www.derby.ac.uk/life/sport/" target="_blank">
-                <button type="button" class="LinkButton  ">
-                    Team Derby
-                </button>
-            </a>
-
-            <a href="https://www.britishdodgeball.org/" target="_blank"
-               style="display: inline-block;">
-                <button type="button" class="LinkButton">
-                    British Dodgeball
-                </button>
-            </a>
-
-            <a href="https://www.bucs.org.uk/sports-page/dodgeball.html" target="_blank"
-               style="display: inline-block;">
-                <button type="button" class="LinkButton">
-                    BUCS Dodgeball
-                </button>
-            </a>
-        </div>
-    </section>
-    <div class="Page_Divider"></div>
-
-    <!--Language Section-->
-    <section id="Language_Study">
-        <div class="LangSwap">
-            <h1 style="margin-bottom: 0; animation: FadeIn 1s" lang="en-GB">Language Study 💬🎌</h1>
-            <h1 style="margin-bottom: 0; animation: FadeIn 1s" lang="jp">日本語を勉強する 💬🎌</h1>
-        </div>
-
-        <div id="LNGStudyAbout" class="TextBubble LangSwap" lang="en-GB" style="cursor:pointer">
-            <p lang="en-GB">
-                Japanese study with the Nottingham Language Centre towards A2 (Elementary) level. The
-                Language centre provide focused learning that encourages active speaking in the target language whenever
-                possible.
-            </p>
-
-            <p lang="jp">
-                ノッティンガムLanguage Centreで日本語勉強しって．A2レベル目指しています．この授業で生徒、心配しないながら日本語で話すように
-                サポートをもらいます．沢山ことを話すことができたり新しい友達を会いました．
-            </p>
-
-            <div class="Horizontal_Flex_Container" lang="en-GB">
-                <button class="Button" lang="en-GB">
-                    Switch Language 🔁
-                </button>
             </div>
 
+            <script src="JS/Webpage%20Specific/LngStudyButton.js"></script>
 
-            <div class="Horizontal_Flex_Container" lang="jp">
-                <button class="Button" lang="jp">
-                    言語を変える 🔁
-                </button>
+            <div class="Horizontal_Flex_Container">
+                <a href="https://www.nottingham.ac.uk/language-centre/about-us/index.aspx" target="_blank">
+                    <button type="button" class="LinkButton">
+                        Nottingham Language Centre
+                    </button>
+                </a>
             </div>
 
-        </div>
+            <div class="Page_Divider"></div>
 
-        <script src="JS/Webpage%20Specific/LngStudyButton.js"></script>
-
-        <div class="Horizontal_Flex_Container">
-            <a href="https://www.nottingham.ac.uk/language-centre/about-us/index.aspx" target="_blank">
-                <button type="button" class="LinkButton">
-                    Nottingham Language Centre
-                </button>
-            </a>
-        </div>
-
-        <div class="Page_Divider"></div>
-
-        <p style="color: rgba(0,0,0,0.5); padding: 0px">Nothing more to see here...</p>
-    </section>
-</div>
-<script src="JS/Collapse.js" onload="CollapseInit()"></script>
-<script src="JS/BubbleBG.Js.js" onload="BubbleBG_Init('BG_Bubbles')"></script>
-<script src="JS/ImageSlide.js" onload="BubbleBG_Init('BG_Bubbles')"></script>
-<script src="JS/LanguageSwap.js"></script>
+            <p style="color: rgba(0,0,0,0.5); padding: 0px">Nothing more to see here...</p>
+        </section>
+    </div>
+    <script src="JS/Collapse.js" onload="CollapseInit()"></script>
+    <script src="JS/BubbleBG.Js.js" onload="BubbleBG_Init('BG_Bubbles')"></script>
+    <script src="JS/ImageSlide.js" onload="BubbleBG_Init('BG_Bubbles')"></script>
+    <script src="JS/LanguageSwap.js"></script>
 
 </body>
+
 </html>
