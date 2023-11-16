@@ -15,14 +15,10 @@
 
 <body>
     <div class="Header">
-        <div style="width: max(90%,300px); padding-bottom: 10px">
+        <div style="flex-grow: 0.05; padding-bottom: 10px">
             <a href="#Intro">
                 <h1 style="margin-top: 8px;user-select: none;">Edwin Busuulwa</h1>
             </a>
-            <div class = "LangSwap">
-                <h2 lang="en-GB" style="user-select: none">University of Derby Graduate</h2>
-                <h2 lang="jp" style="user-select: none">Derby 大学の卒業生</h2>
-            </div>
             <div class="Horizontal_Flex_Container"
                 style="margin-top: 10px;margin-left: 10px; justify-content: flex-start">
                 <a href="mailto: edwinbusulwa@gmail.com">
@@ -35,14 +31,22 @@
                 </a>
             </div>
         </div>
+        <div style="flex-grow: 2;">
+            <button >
+            <a>Home</a>
+            </button>
+        </div>
         <img class="ProfilePic" src="Assets/Images/Profile_Pic.jpeg">
         <a href="https://www.derby.ac.uk/" target="_blank">
             <img style="border-radius: 0" class="ProfilePic" src="Assets/Images/UOD_Logo.png">
         </a>
     </div>
 
-    <canvas class="FullScreen" id="BG_Bubbles" style="filter:blur(3px);">
+    <canvas class="FullScreenCanvas" id="BG_Bubbles" style="filter:blur(3px);">
     </canvas>
+
+    <div class ="PageBlock"></div>
+     
 
     <div class="ContentBody" id =Intro>
 
@@ -607,59 +611,7 @@
         </section>
         <div class="Page_Divider"></div>
 
-        <!--Language Section-->
-        <section id="Language_Study">
-            <div class="LangSwap">
-                <h1 style="margin-bottom: 0; animation: FadeIn 1s" lang="en-GB">Language Study 💬🎌</h1>
-                <h1 style="margin-bottom: 0; animation: FadeIn 1s" lang="jp">日本語を勉強する 💬🎌</h1>
-            </div>
-
-            <div id="LNGStudyAbout" class="TextBubble LangSwap" lang="en-GB" style="cursor:pointer">
-                <p lang="en-GB">
-                    Japanese study with the Nottingham Language Centre towards A2 (Elementary) level. The
-                    Language centre provide focused learning that encourages active speaking in the target language
-                    whenever
-                    possible.
-                </p>
-
-                <p lang="jp">
-                    ノッティンガムLanguage Centreで日本語勉強しって．A2レベル目指しています．この授業で生徒、心配しないながら日本語で話すように
-                    サポートをもらいます．沢山ことを話すことができたり新しい友達を会いました．
-                </p>
-
-                <div class="Horizontal_Flex_Container" lang="en-GB">
-                    <a href ="#Intro">
-                    <button class="Button" lang="en-GB">
-                        Switch Language 🔁
-                    </button>
-                    </a>
-                </div>
-
-
-                <div class="Horizontal_Flex_Container" lang="jp">
-                    <a href ="#Intro">
-                        <button class="Button" lang="jp">
-                            言語を変える 🔁
-                        </button>
-                    </a>
-                </div>
-
-            </div>
-
-            <script src="JS/Webpage%20Specific/LngStudyButton.js"></script>
-
-            <div class="Horizontal_Flex_Container">
-                <a href="https://www.nottingham.ac.uk/language-centre/about-us/index.aspx" target="_blank">
-                    <button type="button" class="LinkButton">
-                        Nottingham Language Centre
-                    </button>
-                </a>
-            </div>
-
-            <div class="Page_Divider"></div>
-
-            <p style="color: rgba(0,0,0,0.5); padding: 0px">Nothing more to see here...</p>
-        </section>
+       
     </div>
     <script src="JS/Collapse.js" onload="CollapseInit()"></script>
     <script src="JS/BubbleBG.Js.js" onload="BubbleBG_Init('BG_Bubbles')"></script>

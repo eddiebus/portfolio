@@ -22,7 +22,29 @@ h1,h2,h3,h4 {
 }
 
 
+button {
+    width: auto;
+    padding: 0.5em 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    text-align: center;
+    color: #000000;
+    font-size: 15px;
+    font-family: Roboto-Regular, Arial;
+    font-weight: bold;
+
+    height: auto;
+    cursor: pointer;
+
+    border: 0;
+    outline: solid #616793 2px;
+    transition: outline 0.1s ease-out, background-color 0.3s ease-in;
+    margin: 10px 8px;
+}
+
 button, a {
+    font-family: Roboto-Regular,Arial;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -69,7 +91,13 @@ video {
 
 }
 
+
+h1 {
+    color: white;
+}
+
 p {
+    color: white;
     font-family: Roboto-Regular, Arial;
     font-size: 15px;
     font-family: Roboto-Regular;
@@ -78,6 +106,10 @@ p {
     line-height: 20px;
 
     animation: FadeIn 1s;
+}
+
+li {
+    color: white;
 }
 
 .CenterImage{
@@ -295,8 +327,8 @@ body {
     background-color: rgba(97, 103, 147, 0.5);
 }
 
-.FullScreen{
-    background-color: rgba(255, 255, 255, 0);
+.FullScreenCanvas{
+    background-color: rgba(14,17,17,100);
     width: 100vw;
     height: 100vh;
     border: 0;
@@ -328,4 +360,12 @@ body {
 
 .LangSwap {
     
+}
+
+.PageBlock{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+
+    position: relative;
 }
