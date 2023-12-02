@@ -92,7 +92,7 @@ video {
 }
 
 
-h1 {
+h1,h2 {
     color: white;
 }
 
@@ -122,6 +122,7 @@ li {
 }
 
 a{
+    font-size: 18px;
     color: #0000ff;
 }
 
@@ -150,7 +151,7 @@ body {
     background-color: rgba(194, 194, 194, 0);
 
     max-width: 720px;
-    min-height: 80vh;
+    min-height: 10vh;
     height: auto;
 
     margin: auto;
@@ -159,7 +160,11 @@ body {
     overflow: hidden;
 
     animation: FadeIn 2s;
+    backdrop-filter: blur(10px);
+    border: solid rgba(128, 128, 128, 0.5);
+    border-radius: 10px
 }
+
 
 .ContentSection {
 
@@ -218,6 +223,13 @@ body {
     white-space: nowrap;
 }
 
+h2 {
+    background-color: #626893;
+    border-radius: 0.1em;
+    outline: solid white 5px;
+    padding: 0.3em  10px;
+}
+
 .Header h2 {
     display: block;
     font-size: 15px;
@@ -231,7 +243,15 @@ body {
 
 .HeaderLinkIcon{
     margin: 0px 5px;
+    border-radius: 0;
 }
+
+
+.HeaderLinkIcon :hover{
+    outline: solid black 5px;
+    color: rgb(255, 255, 255,0.1);
+}
+
 .Header img {
     margin-right: 10px;
     flex-shrink: 0;
@@ -284,25 +304,9 @@ body {
     margin: 10px 8px;
 }
 
-.LinkButton {
-    width: auto;
-    padding: 0.5em 10px;
-    border-radius: 10px;
-    box-sizing: border-box;
-    background-color: #ffffff;
-    text-align: center;
-    color: #000000;
-    font-size: 15px;
-    font-family: Roboto-Regular, Arial;
-    font-weight: bold;
-
-    height: auto;
-    cursor: pointer;
-
-    border: 0;
-    outline: solid #616793 2px;
-    transition: outline 0.1s ease-out, background-color 0.3s ease-in;
-    margin: 10px 8px;
+.Button:hover {
+    outline-width: 4px;
+    background-color: rgba(97, 103, 147, 0.5);
 }
 
 .LinkButton:after {
@@ -319,12 +323,22 @@ body {
     background-repeat: no-repeat;
 
     z-index: 0;
-
 }
 
-.LinkButton:hover {
-    outline-width: 4px;
-    background-color: rgba(97, 103, 147, 0.5);
+.DownloadButton::after{
+    position: relative;
+    content: "";
+    width: 25px;
+    height: 25px;
+    float: right;
+    margin-left: 5px;
+
+    transform: translateY(-10%);
+    background-image: url("../Assets/Icons/Google_Icons/download.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    z-index: 0;
 }
 
 .FullScreenCanvas{
@@ -353,7 +367,6 @@ body {
 .Horizontal_Flex_Container {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
     text-align: center;
 }
@@ -364,8 +377,9 @@ body {
 
 .PageBlock{
     display: block;
-    width: 100vw;
-    height: 100vh;
+    width: auto;
+    margin-bottom: 2vh;
+    min-height: 2vh;
 
     position: relative;
 }
