@@ -228,6 +228,14 @@ h2 {
     border-radius: 0.1em;
     outline: solid white 5px;
     padding: 0.3em  10px;
+    font-size: 25px;
+}
+
+.TechIcon {
+    height:  40px;
+    width: auto;
+    border-radius: 0;
+    vertical-align: middle;
 }
 
 .Header h2 {
@@ -239,6 +247,7 @@ h2 {
     margin-left: 15px;
     margin-bottom: 0px;
 }
+
 
 
 .HeaderLinkIcon{
@@ -256,8 +265,6 @@ h2 {
     margin-right: 10px;
     flex-shrink: 0;
 }
-
-
 
 .SubTitle {
     display: block;
